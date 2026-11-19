@@ -1,0 +1,106 @@
+
+# ==========================================
+# StoreBridge MCP - Git Ignore
+# ==========================================
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+backend/.env
+frontend/.env
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# Python virtual environments
+.venv/
+venv/
+env/
+backend/.venv/
+backend/venv/
+
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.coverage
+htmlcov/
+
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+.python-version
+
+
+# Frontend dependencies
+node_modules/
+frontend/node_modules/
+
+# Frontend build files
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+
+# Temporary and log files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+
+# IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+*.backup
+*.dump
+*.sql.gz
+
+
+# Evaluation generated results
+backend/evals/ragas_results.csv
+backend/evals/assistant_responses.csv
+backend/evals/results/
+backend/evals/*_scores.csv
+backend/evals/*_outputs.json
+
+
+# Backup configuration
+*.backup.toml
+pyproject.backup.toml
+
+
+# Docker (local artifacts)
+docker-compose.override.yml
+
+
+# Local test and debug output
+debug/
+test_output/
+.cache/
