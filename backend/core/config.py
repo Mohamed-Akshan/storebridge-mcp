@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     jwt_secret: str = ""
     cookie_secure: bool = False
     allowed_origin: str = "http://localhost:5173"
-    max_demo_requests_per_hour: int = 35
+    max_demo_requests_per_hour: int = 50
 
     langfuse_public_key: str = ""
     langfuse_secret_key: str = ""
